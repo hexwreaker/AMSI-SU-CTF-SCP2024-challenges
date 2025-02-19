@@ -1,0 +1,44 @@
+08:14:32 - [INFO] Capteur RAD-01 - Radiation: 0.45 µSv/h - Niveau stable
+08:14:33 - [INFO] Capteur MAG-04 - Champ magnétique: 5.7 µT - Niveau stable
+08:15:01 - [WARN] Capteur RAD-01 - Radiation: 0.89 µSv/h - Augmentation anormale détectée
+08:15:02 - [ERROR] Capteur ANOM-02 - Anomalie détectée en salle ██ - Intensité: [CONFIDENTIAL]
+08:15:45 - [INFO] Capteur TEMP-03 - Température ambiante: 23.6°C - Niveau stable
+08:16:12 - [INFO] Capteur RAD-02 - Radiation: 0.49 µSv/h - Niveau stable
+08:16:33 - [WARN] Capteur MAG-04 - Fluctuation de champ magnétique: 7.3 µT - Perturbation détectée
+08:17:01 - [ERROR] Capteur MAG-03 - Capteur hors service - Analyse en cours
+08:17:45 - [INFO] Capteur RAD-01 - Radiation: 1.12 µSv/h - Niveau critique
+08:18:22 - [INFO] Capteur TEMP-03 - Température ambiante: 23.9°C - Légère augmentation
+08:19:01 - [CRITICAL] Capteur ANOM-02 - Anomalie majeure détectée en salle ██ - Intensité: ███
+08:19:34 - [INFO] Capteur RAD-03 - Radiation: 0.32 µSv/h - Niveau stable
+08:20:05 - [ERROR] Capteur RAD-01 - Capteur défectueux - Redémarrage en cours
+08:21:01 - [INFO] Capteur MAG-02 - Champ magnétique: 6.1 µT - Niveau stable
+08:22:15 - [WARN] Capteur TEMP-03 - Température ambiante: 25.2°C - Chaleur anormale détectée
+08:23:45 - [INFO] Capteur RAD-02 - Radiation: 1.35 µSv/h - Augmentation significative
+08:24:02 - [ERROR] Capteur ANOM-04 - Anomalie détectée en salle ██ - Intensité: █████
+08:25:01 - [CRITICAL] Capteur RAD-01 - Niveau de radiation critique: 2.9 µSv/h
+08:26:35 - [INFO] Capteur TEMP-01 - Température ambiante: 24.5°C - Niveau stable
+08:27:42 - [ERROR] Capteur MAG-04 - Fluctuation de champ magnétique: 9.5 µT - Perturbation extrême
+08:28:50 - [WARN] Capteur RAD-03 - Radiation: 0.95 µSv/h - Augmentation modérée
+08:29:12 - [INFO] Capteur ANOM-03 - Anomalie mineure détectée en salle ███
+08:30:01 - [CRITICAL] Capteur MAG-02 - Effondrement de champ magnétique - Niveau: ███ µT
+08:30:45 - [INFO] Capteur TEMP-02 - Température ambiante: 26.1°C - Chaleur excessive
+08:31:25 - [ERROR] Capteur RAD-02 - Échec de calibrage - Valeur instable
+08:32:04 - [WARN] Capteur ANOM-02 - Anomalie détectée en salle ██ - Intensité: [CONFIDENTIAL]
+08:33:12 - [INFO] Capteur RAD-01 - Radiation: 0.71 µSv/h - Niveau stable (recalibré)
+08:34:01 - [CRITICAL] Capteur TEMP-03 - Surchauffe détectée: 28.9°C
+08:34:55 - [INFO] Capteur MAG-01 - Champ magnétique: 5.2 µT - Niveau stable
+08:35:15 - [ERROR] Capteur ANOM-04 - Anomalie non identifiée détectée - Protocole de sécurité activé
+08:36:23 - [INFO] Capteur RAD-03 - Radiation: 0.46 µSv/h - Niveau stable
+08:37:02 - [WARN] Capteur MAG-02 - Instabilité du champ magnétique: 7.0 µT
+08:38:14 - [ERROR] Capteur ANOM-03 - Anomalie majeure en salle ██ - Intensité: █████
+08:39:01 - [CRITICAL] Capteur TEMP-03 - Température excessive: 30.4°C
+08:39:55 - [INFO] Capteur RAD-02 - Radiation: 1.15 µSv/h - Niveau stable (recalibré)
+08:40:23 - [WARN] Capteur MAG-04 - Fluctuation importante: 8.9 µT
+08:41:12 - [ERROR] Capteur ANOM-02 - Anomalie critique détectée - Intensité: █████
+08:42:01 - [INFO] Capteur TEMP-01 - Température ambiante: 24.9°C - Niveau stable
+08:43:14 - [INFO] Capteur RAD-01 - Radiation: 0.58 µSv/h - Niveau stable
+08:44:35 - [WARN] Capteur MAG-03 - Champ magnétique instable: 6.5 µT
+08:45:01 - [CRITICAL] Capteur ANOM-04 - Anomalie catastrophique détectée en salle ██ - Protocole ████ activé
+08:46:50 - [INFO] Capteur TEMP-03 - Température: 27.3°C - Anomalie thermique persistante
+08:47:12 - [ERROR] Capteur RAD-01 - Capteur hors service - Maintenance requise
+08:48:35 - [INFO] Capteur MAG-02 - Champ magnétique: 6.8 µT - Niveau stable (recalibré)

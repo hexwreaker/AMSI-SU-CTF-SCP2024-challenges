@@ -1,0 +1,24 @@
+FROM debian:bookworm
+RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/sources.list.d/backports.list
+
+ENV TIMEZONE=Europe/Paris
+
+# le rm-rf permet de rendre plus léger le container
+RUN apt-get update && apt-get install -y ncat gcc && rm -rf /var/lib/apt/lists/*
+
+COPY ./ /
+WORKDIR /
+
+RUN useradd --home=/agent-charles -U agent-charles
+
+RUN gcc /terminal.c -o /terminal
+
+RUN chmod 505 /terminal
+RUN chown agent-charles:agent-charles /terminal
+
+USER agent-charles
+
+CMD ["sh", "-c", "ncat -e /terminal -l 4000 -k"]
+
+
+

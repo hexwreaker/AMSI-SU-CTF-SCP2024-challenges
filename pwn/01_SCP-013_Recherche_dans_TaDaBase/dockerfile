@@ -1,0 +1,25 @@
+FROM debian:bookworm
+RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/sources.list.d/backports.list
+
+ENV TIMEZONE=Europe/Paris
+
+# le rm-rf permet de rendre plus léger le container
+RUN apt-get update && apt-get install -y ncat gcc && rm -rf /var/lib/apt/lists/*
+
+ARG WDIR="/chall/"
+
+COPY ./docs ${WDIR}docs
+COPY ./tadabase.c ${WDIR}tadabase.c
+WORKDIR ${WDIR}
+
+RUN useradd --home=/agent-charles -U agent-charles
+
+RUN gcc ${WDIR}tadabase.c -o ${WDIR}tadabase
+
+RUN chmod 505 ${WDIR}tadabase
+RUN chown agent-charles:agent-charles ${WDIR}tadabase
+
+USER agent-charles
+
+CMD ["sh", "-c", "ncat -e ${WDIR}tadabase -l 4006 -k"]
+

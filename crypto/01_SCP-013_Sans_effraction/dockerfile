@@ -1,0 +1,24 @@
+FROM debian:bookworm
+RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/sources.list.d/backports.list
+
+ENV TIMEZONE=Europe/Paris
+
+# le rm-rf permet de rendre plus léger le container
+RUN apt-get update && apt-get install -y ncat gcc && rm -rf /var/lib/apt/lists/*
+
+COPY ./watchdog.c /
+WORKDIR /
+
+RUN useradd --home=/agent-charles -U agent-charles
+
+RUN gcc /watchdog.c -o /watchdog
+
+RUN chmod 505 /watchdog
+RUN chown agent-charles:agent-charles /watchdog
+
+USER agent-charles
+
+CMD ["sh", "-c", "ncat -e /watchdog -l 4001 -k"]
+
+
+
