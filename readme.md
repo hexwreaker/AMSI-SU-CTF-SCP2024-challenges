@@ -1,6 +1,6 @@
 
 # AMSI CTF #1 : challenges of hexwreaker
-Challenges that I've made for the « AMSI CTF #1 : Fondation SCP» in 30 November.
+Challenges that I've made for the « AMSI CTF #1 : Fondation SCP» in 30 November 2024.
 
 # Challenges
 1. [Introduction](./01_introduction/)
